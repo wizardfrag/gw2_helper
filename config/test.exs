@@ -9,9 +9,6 @@ config :bcrypt_elixir, :log_rounds, 1
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :gw2_helper, Gw2Helper.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
   database: "gw2_helper_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10

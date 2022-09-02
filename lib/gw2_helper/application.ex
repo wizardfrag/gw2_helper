@@ -15,7 +15,9 @@ defmodule Gw2Helper.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Gw2Helper.PubSub},
       # Start the Endpoint (http/https)
-      Gw2HelperWeb.Endpoint
+      Gw2HelperWeb.Endpoint,
+      # Finch worker
+      {Finch, name: Gw2Finch}
       # Start a worker by calling: Gw2Helper.Worker.start_link(arg)
       # {Gw2Helper.Worker, arg}
     ]

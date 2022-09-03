@@ -5,7 +5,7 @@ defmodule Gw2Helper.ItemsFixtures do
   """
 
   @doc """
-  Generate a item.
+  Generate an item.
   """
   def item_fixture(attrs \\ %{name: "Item fixture"}) do
     {:ok, item} =

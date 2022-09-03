@@ -38,7 +38,7 @@ defmodule Gw2Helper.Items do
   def get_item!(id), do: Repo.get!(Item, id)
 
   @doc """
-  Creates a item.
+  Creates an item.
 
   ## Examples
 
@@ -56,7 +56,7 @@ defmodule Gw2Helper.Items do
   end
 
   @doc """
-  Updates a item.
+  Updates an item.
 
   ## Examples
 
@@ -74,7 +74,7 @@ defmodule Gw2Helper.Items do
   end
 
   @doc """
-  Deletes a item.
+  Deletes an item.
 
   ## Examples
 
@@ -102,6 +102,18 @@ defmodule Gw2Helper.Items do
     Item.changeset(item, attrs)
   end
 
+  @doc """
+  Creates an item from an api response.
+
+  ## Examples
+
+      iex> create_item(%{field: value})
+      {:ok, %Item{}}
+
+      iex> create_item(%{field: bad_value})
+      {:error, %Ecto.Changeset{}}
+
+  """
   def create_item_from_api_response(attrs) do
     attrs = convert_api_response_to_attrs(attrs)
 

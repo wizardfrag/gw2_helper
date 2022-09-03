@@ -20,7 +20,7 @@ defmodule Gw2Helper.ItemsTest do
       assert Items.get_item!(item.id) == item
     end
 
-    test "create_item/1 with valid data creates a item" do
+    test "create_item/1 with valid data creates an item" do
       valid_attrs = %{name: "Hello"}
 
       assert {:ok, %Item{} = item} = Items.create_item(valid_attrs)
@@ -52,12 +52,12 @@ defmodule Gw2Helper.ItemsTest do
       assert_raise Ecto.NoResultsError, fn -> Items.get_item!(item.id) end
     end
 
-    test "change_item/1 returns a item changeset" do
+    test "change_item/1 returns an item changeset" do
       item = item_fixture()
       assert %Ecto.Changeset{} = Items.change_item(item)
     end
 
-    test "create_item_from_api_response/1 with valid data creates a item" do
+    test "create_item_from_api_response/1 with valid data creates an item" do
       api_response = api_fixture()
 
       assert {:ok, %Item{} = item} = Items.create_item_from_api_response(api_response)

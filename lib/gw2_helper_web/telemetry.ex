@@ -1,4 +1,7 @@
 defmodule Gw2HelperWeb.Telemetry do
+  @moduledoc """
+  Contains telemetry that the application exposes
+  """
   use Supervisor
   import Telemetry.Metrics
 

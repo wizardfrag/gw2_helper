@@ -1,4 +1,7 @@
 defmodule Gw2ApiClient.Item do
+  @moduledoc """
+  Get items
+  """
   import Gw2ApiClient.Helpers
 
   def get(id) do

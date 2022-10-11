@@ -1,4 +1,7 @@
 defmodule Gw2Helper.Accounts.UserToken do
+  @moduledoc """
+  Represents a user account's token
+  """
   use Ecto.Schema
   import Ecto.Query
   alias Gw2Helper.Accounts.UserToken

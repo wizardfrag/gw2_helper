@@ -65,7 +65,7 @@ defmodule Gw2Helper.ItemsTest do
       assert %Gw2Helper.Items.Item{
                name: "Longbow",
                description: nil,
-               game_id: 28445,
+               game_id: 28_445,
                type: :Weapon,
                level: 44,
                rarity: :Masterwork,

@@ -10,6 +10,9 @@ config :bcrypt_elixir, :log_rounds, 1
 # Run `mix help test` for more information.
 config :gw2_helper, Gw2Helper.Repo,
   database: "gw2_helper_test#{System.get_env("MIX_TEST_PARTITION")}",
+  username: System.get_env("DB_USER", "postgres"),
+  password: System.get_env("DB_PASS", "postgres"),
+  hostname: System.get_env("DB_HOST", "localhost"),
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
 

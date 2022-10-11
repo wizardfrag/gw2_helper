@@ -6,7 +6,7 @@ defmodule Gw2Helper.Accounts do
   import Ecto.Query, warn: false
   alias Gw2Helper.Repo
 
-  alias Gw2Helper.Accounts.{User, UserToken, UserNotifier}
+  alias Gw2Helper.Accounts.{User, UserNotifier, UserToken}
 
   ## Database getters
 

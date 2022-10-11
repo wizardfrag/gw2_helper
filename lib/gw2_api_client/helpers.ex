@@ -1,4 +1,7 @@
 defmodule Gw2ApiClient.Helpers do
+  @moduledoc """
+  Helper functions
+  """
   require Logger
 
   defp build_url(path, version) do

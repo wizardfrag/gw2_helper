@@ -1,4 +1,5 @@
 defmodule Gw2HelperWeb.UserAuth do
+  @moduledoc false
   import Plug.Conn
   import Phoenix.Controller
 

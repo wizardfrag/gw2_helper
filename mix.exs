@@ -54,7 +54,8 @@ defmodule Gw2Helper.MixProject do
       {:finch, "~> 0.13"},
       {:excoveralls, "~> 0.13", only: [:test]},
       {:mix_audit, "~> 2.0"},
-      {:credo, "~> 1.6"}
+      {:credo, "~> 1.6"},
+      {:gw2_api, github: "nickkeers/gw2_api"}
     ]
   end
 

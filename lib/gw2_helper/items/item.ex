@@ -1,4 +1,7 @@
 defmodule Gw2Helper.Items.Item do
+  @moduledoc """
+  Represents a guild wars 2 item as returned from the API
+  """
   use Ecto.Schema
   import Ecto.Changeset
 

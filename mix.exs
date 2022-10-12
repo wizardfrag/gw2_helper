@@ -10,7 +10,8 @@ defmodule Gw2Helper.MixProject do
       compilers: Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 
@@ -50,7 +51,10 @@ defmodule Gw2Helper.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:finch, "~> 0.13"}
+      {:finch, "~> 0.13"},
+      {:excoveralls, "~> 0.13", only: [:test]},
+      {:mix_audit, "~> 2.0"},
+      {:credo, "~> 1.6"}
     ]
   end
 

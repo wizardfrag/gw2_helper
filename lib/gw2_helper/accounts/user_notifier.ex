@@ -1,4 +1,7 @@
 defmodule Gw2Helper.Accounts.UserNotifier do
+  @moduledoc """
+  Notifies a user via email
+  """
   import Swoosh.Email
 
   alias Gw2Helper.Mailer
